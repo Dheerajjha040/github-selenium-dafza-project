@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-04T16:14:55 GST" name="Default suite" finished-at="2023-10-04T16:15:11 GST" duration-ms="15414">
+    <groups>
+    </groups>
+    <test started-at="2023-10-04T16:14:55 GST" name="Default test" finished-at="2023-10-04T16:15:11 GST" duration-ms="15414">
+      <class name="com.dafzaportal.qa.testcases.Login">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.dafzaportal.qa.testcases.Login@1e802ef9]" started-at="2023-10-04T16:14:55 GST" name="Setup" finished-at="2023-10-04T16:15:00 GST" duration-ms="4384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="verifyLoginWithValidCredentials()[pri:1, instance:com.dafzaportal.qa.testcases.Login@1e802ef9]" started-at="2023-10-04T16:15:00 GST" name="verifyLoginWithValidCredentials" finished-at="2023-10-04T16:15:01 GST" duration-ms="1499" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [84CC3F7A-A250-41FC-B147-50F30A2230B7, findElement {using=xpath, value=//a[text()='Home']}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 16.1, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 22A380, safari:platformVersion: 13.0, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 84CC3F7A-A250-41FC-B147-50F30A2230B7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [84CC3F7A-A250-41FC-B147-50F30A2230B7, findElement {using=xpath, value=//a[text()='Home']}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 16.1, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 22A380, safari:platformVersion: 13.0, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 84CC3F7A-A250-41FC-B147-50F30A2230B7
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.dafzaportal.qa.testcases.Login.verifyLoginWithValidCredentials(Login.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.dafzaportal.qa.testcases.Login@1e802ef9]" started-at="2023-10-04T16:15:01 GST" name="teardown" finished-at="2023-10-04T16:15:01 GST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.dafzaportal.qa.testcases.Login@1e802ef9]" started-at="2023-10-04T16:15:01 GST" name="Setup" finished-at="2023-10-04T16:15:09 GST" duration-ms="7929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="verifyLoginWithInValidCredentials()[pri:2, instance:com.dafzaportal.qa.testcases.Login@1e802ef9]" started-at="2023-10-04T16:15:09 GST" name="verifyLoginWithInValidCredentials" finished-at="2023-10-04T16:15:10 GST" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInValidCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.dafzaportal.qa.testcases.Login@1e802ef9]" started-at="2023-10-04T16:15:10 GST" name="teardown" finished-at="2023-10-04T16:15:11 GST" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.dafzaportal.qa.testcases.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
